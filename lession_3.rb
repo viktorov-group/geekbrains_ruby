@@ -55,28 +55,27 @@
 # Метод должен возвращать true или false
 
 def similar_quarter?
-  if (x1 >= 0) && (x2 >= 0) && (y1 >= 0) && (y2 >= 0) return true else
-  if (x1 <= 0) && (x2 <= 0) && (y1 >= 0) && (y2 >= 0) return true else
-  if (x1 <= 0) && (x2 <= 0) && (y1 <= 0) && (y2 <= 0) return true else
-  if (x1 >= 0) && (x2 >= 0) && (y1 <= 0) && (y2 <= 0) return true else
+  if (@x1 >= 0) && (@x2 >= 0) && (@y1 >= 0) && (@y2 >= 0)  true else
+  if (@x1 <= 0) && (@x2 <= 0) && (@y1 >= 0) && (@y2 >= 0)  true else
+  if (@x1 <= 0) && (@x2 <= 0) && (@y1 <= 0) && (@y2 <= 0)  true else
+  if (@x1 >= 0) && (@x2 >= 0) && (@y1 <= 0) && (@y2 <= 0)  true else
     false
-end.
+
 
 end
 
 #Метод проверяющий лежит ли точка в начале координат
 
 def origin?
-if (x=0 && y=0) true
+if (@x=0 && @y=0) true
 else false
-end
 end
 
 #Метод, устанавливающий точку в начало координат
 
 def set_origin
-
-
+  @x=0
+  @y=0
 end
 
 #-----------------------------------------------------------------------------
