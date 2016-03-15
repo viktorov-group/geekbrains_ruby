@@ -17,11 +17,10 @@ end
 
 class User
   include CalculateYears
-  class User
   def initialize name, date_of_birth
   end
 end
-end
+
 
 class Winery
   include CalculateYears	
