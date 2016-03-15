@@ -54,7 +54,7 @@
 # в одной четверти координатной плоскости.
 # Метод должен возвращать true или false
 
-def similar_quarter? 
+def similar_quarter?
   if (@x1 >= 0) && (@x2 >= 0) && (@y1 >= 0) && (@y2 >= 0)  true else
   if (@x1 <= 0) && (@x2 <= 0) && (@y1 >= 0) && (@y2 >= 0)  true else
   if (@x1 <= 0) && (@x2 <= 0) && (@y1 <= 0) && (@y2 <= 0)  true else
